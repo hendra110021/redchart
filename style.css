@@ -1,0 +1,320 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #f8f8f8;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start; /* Mengubah align-items menjadi flex-start */
+    min-height: 100vh; /* Menggunakan min-height */
+    margin: 20px 0; /* Menambahkan margin vertikal */
+    color: #161515;
+    line-height: 1.6;
+}
+
+.rate-card-container {
+    width: 100%;
+    max-width: 600px; /* Lebar maksimum rate card */
+    background-color: #fff;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    padding: 30px;
+    box-sizing: border-box;
+    margin: 20px; /* Memberi sedikit jarak dari tepi viewport */
+    border-top: 10px solid #ffccd5; /* Warna pink muda di bagian atas */
+}
+
+.header {
+    text-align: center;
+    margin-bottom: 30px;
+    position: relative;
+}
+
+.header h1 {
+    font-size: 2.8em;
+    color: #d14264; /* Pink gelap untuk judul */
+    margin-bottom: 10px;
+    line-height: 1.1;
+    font-weight: 700;
+}
+
+.profile-picture {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    overflow: hidden;
+    margin: 20px auto;
+    border: 5px solid #ffccd5; /* Border warna pink muda */
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+}
+
+.profile-picture img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.header h2 {
+    font-size: 1.8em;
+    color: #333;
+    margin-top: 15px;
+    margin-bottom: 5px;
+    font-weight: 600;
+}
+
+.header .subtitle {
+    font-size: 1em;
+    color: #777;
+    margin-bottom: 20px;
+}
+
+.section {
+    background-color: #fdfdfd;
+    padding: 25px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #eee;
+}
+
+.section h3 {
+    font-size: 1.5em;
+    color: #d14264; /* Pink gelap */
+    margin-bottom: 15px;
+    border-bottom: 2px solid #ffccd5; /* Garis bawah pink muda */
+    padding-bottom: 10px;
+    display: flex;
+    align-items: center;
+    font-weight: 600;
+}
+
+.section h3 i {
+    margin-right: 10px;
+    color: #d14264;
+}
+
+.section p {
+    margin-bottom: 10px;
+    color: #555;
+}
+
+/* About Me section specific styles */
+.about-me p {
+    font-style: italic;
+    background-color: #fff0f3; /* Latar belakang pink sangat muda */
+    padding: 15px;
+    border-radius: 8px;
+    border-left: 5px solid #d14264;
+    color: #444;
+}
+
+/* Rates section specific styles */
+.rates .package-group {
+    margin-bottom: 25px;
+}
+
+.rates .package-group h4 {
+    font-size: 1.2em;
+    color: #444;
+    margin-bottom: 15px;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+}
+
+.rates .package-group h4 i {
+    margin-right: 8px;
+    color: #d14264;
+}
+
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+    background-color: #f5f3f3;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+    border-radius: 8px;
+    overflow: hidden; /* Penting untuk border-radius pada tabel */
+}
+
+table th,
+table td {
+    padding: 12px 15px;
+    text-align: left;
+    border-bottom: 1px solid #f0f0f0;
+}
+
+table th {
+    background-color: #f1edee; /* Latar belakang pink terang untuk header */
+    color: #d14264;
+    font-weight: 600;
+    text-transform: uppercase;
+    font-size: 0.9em;
+}
+
+table tr:last-child td {
+    border-bottom: none;
+}
+
+table tbody tr:hover {
+    background-color: #fbf2f4; /* Hover effect */
+}
+
+.best-value {
+    background-color: #d14264; /* Latar belakang pink gelap untuk best value */
+    color: #fff;
+    padding: 20px;
+    border: none;
+}
+
+.best-value h4, .best-value h4 i {
+    color: #e7e1e1 !important;
+}
+
+.best-value table {
+    background-color: #df4c51;
+}
+
+.best-value table th {
+    background-color: #ffccd5;
+    color: #d14264;
+}
+
+/* TNC section specific styles */
+.tnc ul {
+    list-style: none;
+    padding: 0;
+    margin-left: 0;
+}
+
+.tnc ul li {
+    margin-bottom: 10px;
+    position: relative;
+    padding-left: 25px;
+    color: #555;
+}
+
+.tnc ul li::before {
+    content: "\f00c"; /* Font Awesome check icon */
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    color: #8ac926; /* Warna hijau untuk checklist */
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+.tnc .warning {
+    background-color: #ffebeb; /* Latar belakang merah muda untuk peringatan */
+    color: #cc0000;
+    padding: 15px;
+    border-radius: 8px;
+    text-align: center;
+    font-weight: 700;
+    margin-top: 20px;
+    border: 1px solid #ffaaaa;
+}
+
+/* Message section specific styles */
+.message p {
+    text-align: justify;
+    margin-bottom: 10px;
+}
+
+/* Contact section specific styles */
+.contact .contact-links {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.contact .contact-links a {
+    color: #d14264;
+    text-decoration: none;
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+    transition: color 0.3s ease;
+}
+
+.contact .contact-links a:hover {
+    color: #a02847; /* Sedikit lebih gelap saat hover */
+}
+
+.contact .contact-links a i {
+    margin-right: 10px;
+    font-size: 1.2em;
+    width: 20px; /* Memastikan ikon memiliki lebar yang konsisten */
+    text-align: center;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .rate-card-container {
+        padding: 20px;
+        margin: 15px;
+    }
+
+    .header h1 {
+        font-size: 2.2em;
+    }
+
+    .header h2 {
+        font-size: 1.5em;
+    }
+
+    .section h3 {
+        font-size: 1.3em;
+    }
+
+    table th,
+    table td {
+        padding: 10px;
+        font-size: 0.9em;
+    }
+
+    .tnc .warning {
+        font-size: 0.9em;
+        padding: 12px;
+    }
+}
+
+@media (max-width: 480px) {
+    .rate-card-container {
+        padding: 15px;
+        margin: 10px;
+    }
+
+    .header h1 {
+        font-size: 1.8em;
+    }
+
+    .profile-picture {
+        width: 100px;
+        height: 100px;
+    }
+
+    .header h2 {
+        font-size: 1.3em;
+    }
+
+    .section {
+        padding: 18px;
+    }
+
+    .section h3 {
+        font-size: 1.1em;
+    }
+
+    table th,
+    table td {
+        padding: 8px;
+        font-size: 0.8em;
+    }
+
+    .contact .contact-links a {
+        font-size: 0.9em;
+    }
+
+    .contact .contact-links a i {
+        font-size: 1em;
+    }
+}
